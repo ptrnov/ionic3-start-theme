@@ -2,7 +2,6 @@ import {Component} from "@angular/core";
 import {NavController, AlertController, ToastController, MenuController} from "ionic-angular";
 import {HomePage} from "../home/home";
 import {RegisterPage} from "../register/register";
-import { RestProvider } from '../../providers/rest/rest';
 
 @Component({
   selector: 'page-login',
@@ -10,7 +9,7 @@ import { RestProvider } from '../../providers/rest/rest';
 })
 export class LoginPage {
 
-  constructor(public nav: NavController, public forgotCtrl: AlertController, public menu: MenuController, public toastCtrl: ToastController,restProvider: RestProvider) {
+  constructor(public nav: NavController, public forgotCtrl: AlertController, public menu: MenuController, public toastCtrl: ToastController) {
     this.menu.swipeEnable(false);
   }
 

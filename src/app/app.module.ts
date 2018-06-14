@@ -24,7 +24,7 @@ import {SearchLocationPage} from "../pages/search-location/search-location";
 import {TripDetailPage} from "../pages/trip-detail/trip-detail";
 import {TripsPage} from "../pages/trips/trips";
 import {LocalWeatherPage} from "../pages/local-weather/local-weather";
-import { RestProvider } from '../providers/rest/rest';
+
 
 // import services
 // end import services
@@ -82,7 +82,6 @@ import { RestProvider } from '../providers/rest/rest';
     TripService,
     WeatherProvider,
     { provide: ErrorHandler, useClass: IonicErrorHandler },
-    RestProvider
   ]
 })
 
